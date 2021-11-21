@@ -46,7 +46,7 @@ window.addEventListener("message", async e => {
 	// Obter streams
 	const streamlist = video_config_media['streams'];
 	for (let stream of streamlist) {
-		// Premium                                                             vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv - versões "International Dub"
+		// Premium   - versões "International Dub"
 		if (stream.format == 'trailer_hls' && stream.hardsub_lang == user_lang || (streamlist.length < 15 && stream.hardsub_lang === null))
 			if (rows_number <= 4) {
 				// video_m3u8_array.push(await getDirectStream(stream.url, rows_number));
