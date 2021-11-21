@@ -1,7 +1,7 @@
 window.addEventListener("message", async e => {
 
 	// Meta para testar o player APENAS em localhost
-	if (window.location.href == "http://127.0.0.1:5500/") {
+	if (window.location.href == "http:/localhost/Crunchyrolls_Player") {
 		let meta = document.createElement('meta');
 		meta.httpEquiv = "Content-Security-Policy";
 		meta.content = "upgrade-insecure-requests";
